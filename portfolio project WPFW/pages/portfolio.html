@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="/styling/style.css">
+    <link rel="stylesheet" href="/styling/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vigo Wentink</title>
+</head>
+
+<header>
+    <nav class="topnav" id="topnavs">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/overmij.html">Over mij</a></li>
+            <li><a href="/pages/portfolio.html">Portfolio</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>  
+    </nav>
+</header>
+
+<body>
+<main>
+    <h1>Mijn Portfolio</h1>
+    <p>Hier is een overzicht van mijn laatste projecten waar ik aan heb gewerkt:</p>
+
+    <!-- Bedieningselementen voor filteren en sorteren -->
+    <div class="portfolio-controls">
+        <!-- Filterknoppen op categorie -->
+        <div class="filter-knoppen">
+            <button class="filter-btn active" data-categorie="alles">Alles</button>
+            <button class="filter-btn" data-categorie="Groepsproject">Groepsprojecten</button>
+            <button class="filter-btn" data-categorie="Individueel">Individueel</button>
+        </div>
+
+        <!-- Sorteermenu op datum of alfabet -->
+        <div class="sorteer-wrapper">
+            <label for="sorteer-select">Sorteer op:</label>
+            <select id="sorteer-select">
+                <option value="nieuwste">Nieuwste eerst</option>
+                <option value="oudste">Oudste eerst</option>
+                <option value="titel-az">Titel (A-Z)</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Container waar de projecten dynamisch door JavaScript in worden geladen -->
+    <div id="projecten-container"></div>
+
+</main>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2026 Vigo Wentink. Alle rechten voorbehouden.</p>
+    
+    <h2>contactformulier</h2>
+    <a href="/pages/contact.html"><img src="/images/email-envelope-white-icon.webp" width="40px" alt="Contactformulier"></a>
+
+    <h2>Sociale media</h2>
+    <a href="https://www.linkedin.com/in/vigowentink/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+    <a href="https://www.facebook.com/VigoWentink/" class="fa fa-facebook" aria-label="Facebook"></a>
+    <a href="https://www.instagram.com/vigo_wentink/" class="fa fa-instagram" aria-label="Instagram"></a>
+    <a href="https://x.com/vigowentink?s=11&t=1pwHImI7WQeTVepbs_tzJQ" class="fa fa-twitter" aria-label="X"></a>
+</footer>
+
+<!-- Koppel het JavaScript-bestand -->
+<script src="/scripts/portfolio.js"></script>
+</html>
